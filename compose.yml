@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: 'app'
+    working_dir: '/root/app'
+    tty: true
+    volumes:
+      - ./app:/root/app
+    ports:
+      - 80:5000
